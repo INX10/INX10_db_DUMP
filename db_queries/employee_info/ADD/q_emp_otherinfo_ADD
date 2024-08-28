@@ -1,0 +1,6 @@
+INSERT INTO employee_otherinfo
+VALUES (
+        $emp_ID, 
+        '$b_date', 
+        '$b_place', 
+        '$civil_stat');
