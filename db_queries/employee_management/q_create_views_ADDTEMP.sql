@@ -1,4 +1,4 @@
-CREATE VIEW employee_summary AS
+CREATE VIEW employee_management AS
 SELECT i.user_ID AS ID, 
 	CONCAT(i.first_name, ' ', i.last_name) AS NAME,
     d.department_name AS DEPARTMENT,
