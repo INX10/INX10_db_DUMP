@@ -1,0 +1,8 @@
+SELECT * FROM employee_management 
+WHERE 
+	LOWER(ID) LIKE LOWER('%$search%') OR
+	LOWER(NAME) LIKE LOWER('%$search%') OR
+    LOWER(DEPARTMENT) LIKE LOWER('%$search%') OR
+    LOWER(CONTACT) LIKE LOWER('%$search%') OR
+    REQUESTS LIKE LOWER('%$search%') OR
+    START_DATE LIKE LOWER('%$search%');
