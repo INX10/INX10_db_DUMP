@@ -1,5 +1,19 @@
 SELECT COUNT(CASE WHEN status = 1 THEN 1 END) AS num_emp, 
 	(SELECT COUNT(CASE WHEN hr_approval = 0 THEN 1 END) FROM employee_leave) AS pend_req,
-    COUNT(CASE WHEN department_ID = 1 AND status = 1 THEN 1 END) AS d_hr_count,
-    COUNT(CASE WHEN department_ID = 2 AND status = 1 THEN 1 END) AS d_it_count
+    COUNT(CASE WHEN department_ID = 1 AND status = 1 THEN 1 END) AS d_admin_count,
+    COUNT(CASE WHEN department_ID = 2 AND status = 1 THEN 1 END) AS d_msit_count,
+    COUNT(CASE WHEN department_ID = 3 AND status = 1 THEN 1 END) AS d_purcha_count,
+    COUNT(CASE WHEN department_ID = 4 AND status = 1 THEN 1 END) AS d_shipp_count,
+    COUNT(CASE WHEN department_ID = 5 AND status = 1 THEN 1 END) AS d_acco_count,
+    COUNT(CASE WHEN department_ID = 6 AND status = 1 THEN 1 END) AS d_sales_count,
+    COUNT(CASE WHEN department_ID = 7 AND status = 1 THEN 1 END) AS d_techn_count,
+    COUNT(CASE WHEN department_ID = 8 AND status = 1 THEN 1 END) AS d_ppc_count,
+    COUNT(CASE WHEN department_ID = 9 AND status = 1 THEN 1 END) AS d_pack_count,
+    COUNT(CASE WHEN department_ID = 10 AND status = 1 THEN 1 END) AS d_mixer_count,
+    COUNT(CASE WHEN department_ID = 11 AND status = 1 THEN 1 END) AS d_rmill_count,
+    COUNT(CASE WHEN department_ID = 12 AND status = 1 THEN 1 END) AS d_smill_count,
+    COUNT(CASE WHEN department_ID = 13 AND status = 1 THEN 1 END) AS d_weinpre_count,
+    COUNT(CASE WHEN department_ID = 14 AND status = 1 THEN 1 END) AS d_wash_count,
+    COUNT(CASE WHEN department_ID = 15 AND status = 1 THEN 1 END) AS d_fg_count,
+    COUNT(CASE WHEN department_ID = 16 AND status = 1 THEN 1 END) AS d_rm_count
 FROM employee_history
